@@ -6,10 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles/style.css">
         <link rel="stylesheet" href="styles/header.css">
+        <script src="main.js"></script>
 
     </head>
+
     <body>
       <nav class="navbar">
+        <div id = "clock" onload="currentTime()"></div>
+
                 <div class="content">
                 <a class="logo" href="index.html"><img src="gallery/logo_pulvis.png" alt="Butik Pulvis"></a>
                 <ul class="menu-list">
@@ -110,6 +114,14 @@
 
               </div>
             </div>
+            <div class="container">
+      <span id="hours">00</span>
+      <span>:</span>
+      <span id="minutes">00</span>
+      <span>:</span>
+      <span id="seconds">00</span>
+      <span id="session">AM</span>
+  </div>
         </section>
         <footer>
                   <div id="kontakt" class="contact-section">

@@ -8,6 +8,15 @@
     font-family: "Hansen Grotesque";
 }
 
+:root {
+  --primary-color: #
+  --primary-color:
+
+}
+#ican {
+  width: 30px;
+  position: fixed;
+}
 html {
     font-size: 62.5%;
 }
@@ -247,7 +256,7 @@ img{
     }
   } */
   .content{
-    
+
   }
   .content label{
       text-align: center;
