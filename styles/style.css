@@ -1,0 +1,207 @@
+/*to remove if not needed*/
+body{
+    background-color:#fcfaf0;
+    margin: 0px;
+}
+/*to remove if not needed*/
+
+/*Colleagues Page*/
+
+/*to remove if not needed*/
+.colleagues-section{
+    max-width:1200px;
+    margin:0 auto;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+/*to remove if not needed*/
+
+.colleagues-section *,
+::before,
+::after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: #e5e7eb;
+}
+.colleagues-section{
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+.colleagues-section h3, .colleagues-section h5, .colleagues-section p{
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 0;
+}
+.colleagues-box {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  .colleagues-box {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+  }
+}
+.colleague {
+  flex-wrap: wrap;
+  align-items: center;
+  border-width: 1px;
+  padding: 0.75rem;
+  background-color:white;
+}
+@media (min-width: 640px) {
+  .colleague {
+    display: flex;
+  }
+  .colleague > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1rem * var(--tw-space-x-reverse));
+    margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+}
+@media (min-width: 768px) {
+  .colleague {
+    flex-wrap: nowrap;
+  }
+}
+.colleague-left {
+  display: flex;
+  align-items: center;
+}
+.colleague-left > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
+}
+.colleague-image-wrapper img {
+  width: 6rem;
+}
+.colleague-name {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+.colleague-apps {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (min-width: 640px) {
+  .colleague-apps {
+    width: 58.333333%;
+  }
+}
+.colleague-skill {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  border-width: 1px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+
+/*FAQ Page*/
+
+/*to remove if not needed*/
+.faq-section{
+    max-width:1200px;
+    margin:0 auto;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+/*to remove if not needed*/
+
+.faq-section .faq-box{
+    border-left:1px solid black;
+    border-right:1px solid black;
+    border-top:1px solid black;
+}
+.faq-section .accordion {
+    background-color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    border-bottom:1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+.faq-section .active, .accordion:hover {
+    background-color: #f6f6f6;
+}
+.faq-section .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    border-bottom:1px solid black;
+}
+.faq-section .faq-icon {
+    height: 0.75rem;
+    width: 0.75rem;
+}
+.faq-image-section{
+    max-width:1200px;
+    margin:0 auto;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.faq-image-section{
+    display:block;
+    margin-bottom:50px;
+}
+.faq-image-section .image-step h4{
+    text-align:center;
+}
+.faq-image-section .image-step{
+    width:100%;
+}
+.faq-image-section .image-arrow img{
+    max-width:100px;
+    width:100%;
+    display:block;
+    -webkit-transform:rotate(90deg); /* Chrome, Safari, Opera */
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);   /* Standard syntax */
+    margin: 50px auto;
+
+}
+.faq-image-section .image-step img{
+    width:100%;
+}
+@media (min-width: 640px) {
+    .faq-image-section{
+        display:flex;
+        align-items:center;
+    }
+    .faq-image-section .image-step{
+        width:25%;
+        padding:1%;
+    }
+    .faq-image-section .image-arrow{
+        width:9.5%;
+    }
+    .faq-image-section .image-arrow img
+    {
+        -webkit-transform:rotate(0deg); /* Chrome, Safari, Opera */
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);   /* Standard syntax */
+        margin:0 auto;
+    }
+}
